@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
+using namespace std;
+class reactangle
+{
+public:
+	int lenth;
+	int breath;
+	reactangle(int l = 0, int b = 0)
+	{
+		lenth = l;
+		breath = b;
+	}
+	int area()
+	{
+		return lenth * breath;
+	}
 
+};
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Hello World!\n";
+	reactangle r1(10, 20);
+	cout << r1.area() << endl;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
