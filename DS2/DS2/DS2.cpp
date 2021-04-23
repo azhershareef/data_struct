@@ -17,6 +17,10 @@ public:
 	{
 		return lenth * breath;
 	}
+	int width()
+	{
+		return 2 * lenth*breath;
+	}
 
 };
 int main()
@@ -24,6 +28,7 @@ int main()
     cout << "Hello World!\n";
 	reactangle r1(10, 20);
 	cout << r1.area() << endl;
+	cout << r1.width() << endl;
 	return 0;
 }
 
